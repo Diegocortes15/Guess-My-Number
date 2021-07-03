@@ -166,15 +166,6 @@ h1 {
     }
 }
 
-/* @media screen and (max-width: 37.5em) {
-    .between {
-        position: static;
-        max-width: 100%;
-        text-align: center;
-        margin-top: 2rem;
-    }
-} */
-
 .again {
     position: absolute;
     top: 2rem;
