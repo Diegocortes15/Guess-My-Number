@@ -52,7 +52,7 @@ window.addEventListener('load', function () {
     check.addEventListener('click', function () {
         const guessNumber = Number(guess.value);
         if (!guessNumber) {
-            displayMessage('❌ Type a number');
+            displayMessage('⛔ Type a number');
         } else {
             checkValue(guessNumber);
         }
