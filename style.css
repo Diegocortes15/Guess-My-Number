@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 37.5em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: #222;
+    /* background-color: #620129; */
+    /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+    min-height: 22rem;
+    width: 100%;
+}
+@media screen and (max-width: 31.25em) {
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 28.125em) {
+    header {
+        margin-bottom: 1rem;
+    }
+}
+
+main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 30rem;
+}
+
+@media screen and (max-width: 37.5em) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 3rem;
+    }
+}
+@media screen and (max-width: 31.25em) {
+    main {
+        padding: 0 6rem;
+    }
+}
+
+.left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 37.5em) {
+    .left {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 28.125em) {
+    .left {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 1rem;
+        gap: 3rem;
+    }
+}
+
+.right {
+    width: 52rem;
+    font-size: 2rem;
+}
+@media screen and (max-width: 28.125em) {
+    .right {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+/* ELEMENTS STYLE */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 31.25em) {
+    h1 {
+        position: static;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
+
+.number {
+    background: #eee;
+    color: #333;
+    font-size: 6rem;
+    width: 15rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+@media screen and (max-width: 31.25em) {
+    .number {
+        font-size: 4rem;
+        padding: 1.5rem;
+    }
+}
+
+.between {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+@media screen and (max-width: 31.25em) {
+    .between {
+        position: static;
+        top: 0;
+        left: 0;
+        align-self: center;
+    }
+}
+
+/* @media screen and (max-width: 37.5em) {
+    .between {
+        position: static;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+} */
+
+.again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+@media screen and (max-width: 31.25em) {
+    .again {
+        position: static;
+        top: 0;
+        left: 0;
+        align-self: center;
+        margin-bottom: 6rem;
+    }
+}
+
+.guess {
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 5rem;
+    padding: 2.5rem;
+    width: 25rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 37.5em) {
+    .guess {
+        margin: 0;
+    }
+}
+
+.btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.message {
+    margin-bottom: 8rem;
+    height: 3rem;
+}
+@media screen and (max-width: 28.125em) {
+    .message {
+        margin-bottom: 4rem;
+        height: auto;
+    }
+}
+
+.label-score {
+    margin-bottom: 2rem;
+}
